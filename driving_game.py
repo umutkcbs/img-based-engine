@@ -15,7 +15,8 @@ cycle = 0
 gameState = True
 
 def overlay_image_alpha(img, img_overlay, x, y, alpha_mask):
-    """Overlay `img_overlay` onto `img` at (x, y) and blend using `alpha_mask`.
+    """
+    Overlay `img_overlay` onto `img` at (x, y) and blend using `alpha_mask`.
 
     `alpha_mask` must have same HxW as `img_overlay` and values in range [0, 1].
     """
@@ -206,6 +207,9 @@ while True:
 
     cv2.waitKey(1)
     time.sleep(0.005)
+    """
+        Press "q" to exit
+    """
     if keyboard.is_pressed("q"):
         cv2.destroyAllWindows()
         break
