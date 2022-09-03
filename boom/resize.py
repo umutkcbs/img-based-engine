@@ -1,3 +1,7 @@
+"""
+This code allows you to resize images
+"""
+
 import os
 import cv2
 import glob
